@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.min.css">
+</head>
+<body>
+    <!-- <div class="wrapper"> -->
+        <!-- side bar -->
+        <!-- <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>bootstrap sidebar</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                    <a href="#homesubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toogle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#homesubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toogle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav> -->
+
+        <!-- Page content -->
+        <!-- <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-info" id="sidebarCollapse">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toogle Sidebar</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div> -->
+
+    <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Bootstrap Sidebar</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#" class="text-light linktext">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light linktext">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light linktext">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="text-light linktext">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-light linktext">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#" class="text-light linktext">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light linktext">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light linktext">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="text-light linktext">Portfolio</a>
+            </li>
+            <li>
+                <a href="#" class="text-light linktext">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="m-auto">
+
+        <nav class="navbar navid navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+            </div>
+        </nav>
+        <hr>
+
+    </div>
+</div>
+<div class="container justify-content-center card shadow m-auto rounded bg-light">
+    <h3 class="mt-2 pl-2">
+        Passenger Manifest form
+    </h3>
+    <hr>
+    <div class="justify-content-center">
+        <ul class="d-flex justify-content-between marg">
+            <li class="inline-block list-unstyled">
+                <input  class = "form-control" type="text" name="parkID" id="parkID" placeholder="park ID">
+            </li>
+            <li class="inline-block list-unstyled">
+                <input type="text" class = "form-control" name="BusID" id="busID" placeholder="busID">
+            </li>
+        </ul>
+
+        <p><strong>Passenger Name</strong>
+            <input type="text" name="Name" id="Name" class="form-control" placeholder="Enter Name">
+        </p>
+        <p><strong>Passenger phone number</strong>
+            <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Enter phone number">
+        </p>
+        <p><strong>Residential Address</strong>
+            <input type="text" name="address" id="address" class="form-control" placeholder="Enter address">
+        </p>
+        <p><strong>Next of Kin Name</strong>
+            <input type="text" name="kinName" id="kinName" class="form-control" placeholder="Enter kinname">
+        </p>
+        <p><strong>Next of Kin phone number</strong>
+            <input type="text" name="kinNumber" id="kinNumber" class="form-control" placeholder="Enter kin number">
+        </p>
+        <hr>
+        <div class="d-flex justify-content-center pb-2">
+            <input type="submit" value="Submit" class="btn btn-outline-info">
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+    <script src="./assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+</body>
+</html>
